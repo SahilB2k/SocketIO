@@ -32,6 +32,12 @@ app.get('/', (req, res) => {
 io.on("connection", (socket) => {
     console.log("User Connected:", socket.id);
 
+
+    socket.on("join-room", (room) => {
+        socket.join(room);
+        console.log(`User ${socket.id} joined room ${room}`);
+    });
+
     // Listen for messages
     socket.on("message", ({room,message}) => {
         console.log({room,message});
