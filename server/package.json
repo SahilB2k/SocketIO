@@ -8,9 +8,9 @@
     "start": "node app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sahil",
   "license": "ISC",
-  "description": "",
+  "description": "This is a Node Server for our Chat Application",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
